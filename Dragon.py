@@ -36,7 +36,7 @@ lineTo(130, 190)
 lineTo(130, 210)
 lineTo(135, 235)
 lineTo(150, 260)
-
+print('hello')
 
 
 run()
