@@ -18,19 +18,8 @@ def update():
     moveObjectBy(obj, 3, 3)
     if xCoord(obj) >= 350:  # если вышел
         moveObjectBy(obj2, 0, -1)
-        if yCoord(obj2) >= 150:
+        if yCoord(obj2) <= 70:
             close()
-    # onTimer(update, 250)
-#def keyPressed(event):
-#   if event.keycode == VK_ESCAPE:
-#        close()
-#
-#
-#onKey(keyPressed)
-
-#onKey(keyPressed)
-#onTimer(update, 50)
-#onTimer(update, 250)
 def keyPressed(event):
     if event.keycode == VK_ESCAPE:
         close()
@@ -41,20 +30,13 @@ penColor(250, 150, 30)
 brushColor(250, 150, 30)
 obj = rectangle(x, y, x+4, y+4)
 a = 370
-b = 200
+b = 250
 brushColor(255, 150, 0)
 obj2 = polygon( [(a, b), (a - 20, b - 20), (a - 10, b - 50), (a + 10, b - 70), (a + 25, b - 80), (a + 18, b - 70), (a + 25, b - 55),
      (a + 43, b - 40), (a + 40, b - 50), (a + 50, b - 60), (a + 47, b - 55), (a + 60, b - 50), (a + 75, b - 60),
      (a + 70, b - 70), (a + 80, b - 70), (a + 100, b - 60), (a + 150, b)])
 onKey(keyPressed)
 onTimer(update, 50)
-
-
-#def update():
-
-
-
-
 
 
 
@@ -110,24 +92,3 @@ point(260, 118)
 
 
 run()
-
-#moveObjectBy(obj2, 0, -1)
-#if yCoord(obj2) >= 150:
-#    close()
-
-
-# onTimer(update, 250)
-#def keyPressed(event):
-##       close()
-
-
-#onKey(keyPressed)
-#a = 370
-#b = 200
-#brushColor(255, 150, 0)
-#obj2 = polygon(
-#    [(a, b), (a - 20, b - 20), (a - 10, b - 50), (a + 10, b - 70), (a + 25, b - 80), (a + 18, b - 70), (a + 25, b - 55),
-#     (a + 43, b - 40), (a + 40, b - 50), (a + 50, b - 60), (a + 47, b - 55), (a + 60, b - 50), (a + 75, b - 60),
-#     (a + 70, b - 70), (a + 80, b - 70), (a + 100, b - 60), (a + 150, b)])
-#onKey(keyPressed)
-#onTimer(update, 50)
