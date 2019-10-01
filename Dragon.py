@@ -17,7 +17,7 @@ rectangle(0,200,800,221)
 def update():
     moveObjectBy(obj, 3, 3)
     if xCoord(obj) >= 350:  # если вышел
-        moveObjectBy(obj2, 0, -1)
+        moveObjectBy(obj2, 0, -3)
         if yCoord(obj2) <= 70:
             close()
 def keyPressed(event):
